@@ -4,9 +4,9 @@ public class LoggerAppl {
 	static Logger logger = Logger.getLogger("LoggerAppl");
 	
 	public static void main(String[] args) throws Exception {
-		LogManager.getLogManager().reset(); // сброс логгера по умолчанию
+		LogManager.getLogManager().reset(); 
 		
-		logger.setLevel(Level.FINE); //дб переменная среды
+		logger.setLevel(Level.FINE); 
 		Handler handler = new ConsoleHandler();
 		Handler handlerFile = new FileHandler("logs");
 		handler.setLevel(Level.FINEST);
